@@ -87,30 +87,39 @@ function Header() {
           </div>
         </div>
         <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
-          <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
+          <span className="sr-only">
             Rapidly build modern websites without ever leaving your HTML.
+          </span>
+          <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
+            快速构建现代网站，直接在 HTML 中完成所有操作。
           </h1>
+          <span className="sr-only">
+            A utility-first CSS framework packed with classes like flex, pt-4, text-center and
+            rotate-90 that can be composed to build any design, directly in your markup.
+          </span>
           <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-            A utility-first CSS framework packed with classes like{' '}
+            一个以实用优先的 CSS 框架，提供了诸如{' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">flex</code>,{' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">pt-4</code>,{' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">
               text-center
             </code>{' '}
-            and{' '}
+            和{' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">rotate-90</code>{' '}
-            that can be composed to build any design, directly in your markup.
+            等类，可以直接在你的标记中组合使用，构建任意设计。
           </p>
           <div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
+            <span className="sr-only">Get started</span>
             <NextLink
               href="/docs/installation"
               className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
             >
-              Get started
+              开始使用
             </NextLink>
             <SearchButton className="hidden sm:flex items-center w-72 text-left space-x-3 px-4 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
               {({ actionKey }) => (
                 <>
+                  <span className="sr-only">Quick search...</span>
                   <svg
                     width="24"
                     height="24"
@@ -125,7 +134,7 @@ function Header() {
                     <path d="m19 19-3.5-3.5" />
                     <circle cx="11" cy="11" r="6" />
                   </svg>
-                  <span className="flex-auto">Quick search...</span>
+                  <span className="flex-auto">快速搜索...</span>
                   {actionKey && (
                     <kbd className="font-sans font-semibold dark:text-slate-500">
                       <abbr

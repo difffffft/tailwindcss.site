@@ -3,6 +3,7 @@
   "name": "tailwindcss.com",
   "scripts": {
     "dev": "next dev",
+    "git": "git add . && git-cz",
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
@@ -68,9 +69,14 @@
     "zustand": "^4.0.0-rc.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^13.5.6",
     "glyphhanger": "^5.0.0",
+    "husky": "^9.0.11",
     "prettier": "^2.5.0"
   }
 }
