@@ -247,17 +247,23 @@ export function BuildAnything() {
           light={require('@/img/icons/home/build-anything.png').default.src}
           dark={require('@/img/icons/home/dark/build-anything.png').default.src}
         />
-        <Caption className="text-pink-500 dark:text-pink-400">Build anything</Caption>
+        <span className='sr-only'>Build anything</span>
+        <Caption className="text-pink-500 dark:text-pink-400">构建一切</Caption>
         <BigText>
-          <Widont>Build whatever you want, seriously.</Widont>
+          <span className='sr-only'>Build whatever you want, seriously.</span>
+          <Widont>随心所欲，创造你想要的一切。 </Widont>
         </BigText>
-        <Paragraph>
-          Because Tailwind is so low-level, it never encourages you to design the same site twice.
+
+        <span className='sr-only'>Because Tailwind is so low-level, it never encourages you to design the same site twice.
           Even with the same color palette and sizing scale, it's easy to build the same component
-          with a completely different look in the next project.
+          with a completely different look in the next project.</span>
+        <Paragraph>
+          由于Tailwind非常底层，它从不鼓励您重复设计同一网站。即使使用相同的调色板和尺寸比例，也可以轻松地在下一个项目中构建具有完全不同外观的相同组件。
         </Paragraph>
+
+        <span className='sr-only'>Get started</span>
         <Link href="/docs/installation" color="pink" darkColor="gray">
-          Get started<span className="sr-only">, installation</span>
+          立即上手<span className="sr-only">, installation</span>
         </Link>
         <div className="mt-10">
           <Tabs

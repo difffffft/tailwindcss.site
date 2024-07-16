@@ -118,23 +118,21 @@ export function ModernFeatures() {
           light={require('@/img/icons/home/modern-features.png').default.src}
           dark={require('@/img/icons/home/dark/modern-features.png').default.src}
         />
-        <Caption className="text-indigo-500 dark:text-indigo-400">Modern features</Caption>
+        <Caption className="text-indigo-500 dark:text-indigo-400">更现代化</Caption>
         <BigText>
-          <Widont>Cutting-edge is our comfort zone.</Widont>
+          <Widont>前沿技术是我们的舒适区。</Widont>
         </BigText>
         <Paragraph as="div">
           <p>
-            Tailwind is unapologetically modern, and takes advantage of all the latest and greatest
-            CSS features to make the developer experience as enjoyable as possible.
+            Tailwind 毫不掩饰地拥抱现代，充分利用最新和最棒的 CSS 特性，以尽可能提升开发者的体验。
           </p>
           <p>
-            We've got first-class CSS grid support, composable transforms and gradients powered by
-            CSS variables, support for modern state selectors like{' '}
-            <InlineCode>:focus-visible</InlineCode>, and tons more.
+            我们拥有一流的 CSS 网格支持，由 CSS 变量驱动的可组合变换和渐变，支持像
+            这样的现代状态选择器<InlineCode>:focus-visible</InlineCode>，以及更多其他功能。
           </p>
         </Paragraph>
         <Link href="/docs/grid-template-columns" color="indigo" darkColor="gray">
-          Learn more<span className="sr-only">, grid template columns</span>
+          学习更多<span className="sr-only">, grid template columns</span>
         </Link>
         <div className="mt-10">
           <Tabs

@@ -46,18 +46,15 @@ export function ReadyMadeComponents() {
           light={require('@/img/icons/home/ready-made-components.png').default.src}
           dark={require('@/img/icons/home/dark/ready-made-components.png').default.src}
         />
-        <Caption className="text-indigo-500">Ready-made components</Caption>
+        <Caption className="text-indigo-500">现成的组件库</Caption>
         <BigText>
-          <Widont>Move even faster with Tailwind UI.</Widont>
+          <Widont>使用 Tailwind UI，您可以更快地开发。</Widont>
         </BigText>
         <Paragraph>
-          Tailwind UI is a collection of beautiful, fully responsive UI components, designed and
-          developed by us, the creators of Tailwind CSS. It's got hundreds of ready-to-use examples
-          to choose from, and is guaranteed to help you find the perfect starting point for what you
-          want to build.
+          Tailwind UI 是一套由我们 Tailwind CSS 的创作者设计和开发的美丽、完全响应式的UI组件集合。它提供了数百个现成的示例可供选择，并保证能帮助您找到所需构建的完美起点。
         </Paragraph>
         <Link href="https://tailwindui.com/?ref=landing" color="indigo" darkColor="gray">
-          Learn more
+          学习更多
         </Link>
       </div>
       <GridLockup

@@ -256,8 +256,8 @@ export function Hero() {
               animate={
                 containerRect?.width
                   ? {
-                      width: !supportsMd || wide ? containerRect.width : 375,
-                    }
+                    width: !supportsMd || wide ? containerRect.width : 375,
+                  }
                   : {}
               }
               transition={TRANSITION}
@@ -325,10 +325,10 @@ export function Hero() {
                       finished
                         ? { top: 0, left: 0, width: '100%', height: '100%' }
                         : step >= 13 && md
-                        ? fit(192, containerRect.height, 384, 512)
-                        : step >= 12 && md
-                        ? fit(192, 96, 384, 512)
-                        : fit(96, 96, 384, 512)
+                          ? fit(192, containerRect.height, 384, 512)
+                          : step >= 12 && md
+                            ? fit(192, 96, 384, 512)
+                            : fit(96, 96, 384, 512)
                     }
                   />
                 </motion.div>
@@ -338,15 +338,16 @@ export function Hero() {
                   transition={TRANSITION}
                 >
                   <motion.div layout={layout} className="mb-4" transition={TRANSITION}>
+                    <span className='sr-only'>“Tailwind CSS is the only framework that I've seen scale on large teams. It’s
+                      easy to customize, adapts to any design, and the build size is tiny.”</span>
                     <Words bolder={step >= 3} layout={layout} transition={TRANSITION}>
-                      “Tailwind CSS is the only framework that I've seen scale on large teams. It’s
-                      easy to customize, adapts to any design, and the build size is tiny.”
+                      “Tailwind CSS 是我见过的唯一能在大型团队中扩展的框架。它
+                      它易于定制，能适应任何设计，而且构建规模很小。”
                     </Words>
                   </motion.div>
                   <motion.div
-                    className={`flex flex-col ${
-                      (step >= 7 && !md) || (step < 14 && md) ? 'items-center' : 'items-start'
-                    }`}
+                    className={`flex flex-col ${(step >= 7 && !md) || (step < 14 && md) ? 'items-center' : 'items-start'
+                      }`}
                     style={{
                       ...(step >= 4 ? { fontWeight: 500 } : { fontWeight: 400 }),
                     }}

@@ -176,23 +176,24 @@ export default function Home() {
       <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
         <Header />
         <section className="text-center px-8 mt-20 sm:mt-32 md:mt-40">
+          <span className='sr-only'>“Best practices” don’t actually work.</span>
           <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
-            “Best practices” don’t actually work.
+            “最佳实践 "实际上并不起作用。
           </h2>
           <figure>
             <blockquote>
+              <span className='sr-only'>
+                I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.
+              </span>
               <p className="mt-6 max-w-3xl mx-auto text-lg">
-                I’ve written{' '}
+                我写了{' '}
                 <a
                   href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
                   className="text-sky-500 font-semibold dark:text-sky-400"
                 >
-                  a few thousand words
+                  好几千字
                 </a>{' '}
-                on why traditional “semantic class names” are the reason CSS is hard to maintain,
-                but the truth is you’re never going to believe me until you actually try it. If you
-                can suppress the urge to retch long enough to give it a chance, I really think
-                you’ll wonder how you ever worked with CSS any other way.
+                解释为什么传统的“语义化类名”是 CSS 难以维护的罪魁祸首，但事实是，除非你亲自试一试，否则你永远不会相信我。如果你能够克制住想要反感的冲动，给它一个机会，我真的相信你会惊讶于以前为什么会用其他方式处理 CSS。
               </p>
             </blockquote>
             <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
@@ -205,7 +206,8 @@ export default function Home() {
               />
               <div>
                 <div className="text-slate-900 font-semibold dark:text-white">Adam Wathan</div>
-                <div className="mt-0.5 text-sm leading-6">Creator of Tailwind CSS</div>
+                <span className='sr-only'>Creator of Tailwind CSS</span>
+                <div className="mt-0.5 text-sm leading-6">Tailwind CSS 的创始人</div>
               </div>
             </figcaption>
           </figure>

@@ -313,20 +313,18 @@ export function EditorTools() {
           light={require('@/img/icons/home/editor-tools.png').default.src}
           dark={require('@/img/icons/home/dark/editor-tools.png').default.src}
         />
-        <Caption className="text-sky-500">Editor tools</Caption>
-        <BigText>World-class IDE integration.</BigText>
+        <Caption className="text-sky-500">编辑工具</Caption>
+        <BigText>与世界一流的 IDE 集成。</BigText>
         <Paragraph as="div">
           <p>
-            Worried about remembering all of these class names? The Tailwind CSS IntelliSense
-            extension for VS Code has you covered.
+            担心记不住所有这些类名？VS Code 的 Tailwind CSS IntelliSense 扩展可以帮助您解决这个问题。
           </p>
           <p>
-            Get intelligent autocomplete suggestions, linting, class definitions and more, all
-            within your editor and with no configuration required.
+            获得智能自动完成建议、代码检查、类定义等功能，全部集成在您的编辑器中，无需额外配置。
           </p>
         </Paragraph>
         <Link href="/docs/intellisense" color="sky" darkColor="gray">
-          Learn more<span className="sr-only">, editor setup</span>
+          学习更多<span className="sr-only">, editor setup</span>
         </Link>
       </div>
       <GridLockup

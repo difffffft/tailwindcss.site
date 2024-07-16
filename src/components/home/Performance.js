@@ -131,15 +131,13 @@ export function Performance() {
           light={require('@/img/icons/home/performance.png').default.src}
           dark={require('@/img/icons/home/dark/performance.png').default.src}
         />
-        <Caption className="text-sky-500">Performance</Caption>
-        <BigText>It’s tiny — never ship unused CSS again.</BigText>
+        <Caption className="text-sky-500">性能方面</Caption>
+        <BigText>体积微小 — 永远不再传送未使用的 CSS。</BigText>
         <Paragraph>
-          Tailwind automatically removes all unused CSS when building for production, which means
-          your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind
-          projects ship less than 10kB of CSS to the client.
+          Tailwind 在构建生产环境时会自动删除所有未使用的 CSS，这意味着您的最终 CSS 包大小将尽可能地减小。事实上，大多数 Tailwind 项目向客户端传送的 CSS 小于 10kB。
         </Paragraph>
         <Link href="/docs/optimizing-for-production" color="sky" darkColor="gray">
-          Learn more<span className="sr-only">, optimizing for production</span>
+          学习更多<span className="sr-only">, optimizing for production</span>
         </Link>
       </div>
       <GridLockup

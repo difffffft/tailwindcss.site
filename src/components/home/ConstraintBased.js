@@ -259,7 +259,7 @@ function Shadows() {
               style={{
                 boxShadow:
                   defaultConfig.theme.boxShadow[
-                    shadow.replace(/^shadow-/, '').replace('shadow', 'DEFAULT')
+                  shadow.replace(/^shadow-/, '').replace('shadow', 'DEFAULT')
                   ],
               }}
             >
@@ -285,18 +285,24 @@ export function ConstraintBased() {
           light={require('@/img/icons/home/constraint-based.png').default.src}
           dark={require('@/img/icons/home/dark/constraint-based.png').default.src}
         />
-        <Caption className="text-indigo-500 dark:text-indigo-400">Constraint-based</Caption>
+        <span className='sr-only'>Constraint-based</span>
+        <Caption className="text-indigo-500 dark:text-indigo-400">基于约束</Caption>
         <BigText>
-          <Widont>An API for your design system.</Widont>
+          <span className='sr-only'>An API for your design system.</span>
+          <Widont>一个设计系统的API</Widont>
         </BigText>
-        <Paragraph>
-          Utility classes help you work within the constraints of a system instead of littering your
+        <span className='sr-only'>Utility classes help you work within the constraints of a system instead of littering your
           stylesheets with arbitrary values. They make it easy to be consistent with color choices,
           spacing, typography, shadows, and everything else that makes up a well-engineered design
-          system.
+          system.</span>
+        <Paragraph>
+          实用类（Utility classes）帮助您在系统约束内进行工作，而不是将样式表填满任意数值。它们使得在颜色选择、间距、排版、阴影以及构建良好设计系统中的其他方面保持一致变得轻松。
         </Paragraph>
+
+
+        <span className="sr-only">Learn more</span>
         <Link href="/docs/utility-first" color="indigo" darkColor="gray">
-          Learn more<span className="sr-only">, utility-first fundamentals</span>
+          学习更多<span className="sr-only">, utility-first fundamentals</span>
         </Link>
         <div className="mt-10">
           <Tabs

@@ -93,19 +93,18 @@ export function StateVariants() {
           light={require('@/img/icons/home/state-variants.png').default.src}
           dark={require('@/img/icons/home/dark/state-variants.png').default.src}
         />
-        <Caption className="text-blue-500">State variants</Caption>
+        <Caption className="text-blue-500">状态变更</Caption>
         <BigText>
-          <Widont>Hover and focus states? We got ’em.</Widont>
+          <Widont>悬停和焦点状态？我们全都有。</Widont>
         </BigText>
         <Paragraph>
-          Want to style something on hover? Stick <InlineCode>hover:</InlineCode> at the beginning
-          of the class you want to add. Works for <InlineCode>focus</InlineCode>,{' '}
+          想要在悬停时样式化某些内容？只需在想要添加的类名前加上 <InlineCode>hover:</InlineCode>
+          。还支持<InlineCode>focus</InlineCode>,{' '}
           <InlineCode>active</InlineCode>, <InlineCode>disabled</InlineCode>,{' '}
-          <InlineCode>focus-within</InlineCode>, <InlineCode>focus-visible</InlineCode>, and even
-          fancy states we invented ourselves like <InlineCode>group-hover</InlineCode>.
+          <InlineCode>focus-within</InlineCode>, <InlineCode>focus-visible</InlineCode>, 甚至我们自己发明的高级状态如<InlineCode>group-hover</InlineCode>。
         </Paragraph>
         <Link href="/docs/hover-focus-and-other-states" color="blue" darkColor="gray">
-          Learn more<span className="sr-only">, handling hover, focus, and other states</span>
+          学习更多<span className="sr-only">, handling hover, focus, and other states</span>
         </Link>
       </div>
       <GridLockup
@@ -192,9 +191,8 @@ export function StateVariants() {
                           {Array.from({ length: 5 }).map((_, j) => (
                             <img
                               key={j}
-                              src={`https://images.unsplash.com/${
-                                faces[i * 5 + j]
-                              }?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80`}
+                              src={`https://images.unsplash.com/${faces[i * 5 + j]
+                                }?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80`}
                               alt=""
                               className="w-6 h-6 rounded-full bg-slate-100 ring-2 ring-white dark:ring-slate-700 dark:group-hover:ring-white"
                               loading="lazy"
@@ -245,15 +243,15 @@ export function StateVariants() {
                       (states.includes('new-btn-hover') &&
                         lineIndex >= lineRanges['new-btn-hover'][0] &&
                         lineIndex <= lineRanges['new-btn-hover'][1]) ||
-                      (states.includes('input-focus') &&
-                        lineIndex >= lineRanges['input-focus'][0] &&
-                        lineIndex <= lineRanges['input-focus'][1]) ||
-                      (states.includes('item-hover') &&
-                        lineIndex >= lineRanges['item-hover'][0] &&
-                        lineIndex <= lineRanges['item-hover'][1]) ||
-                      (states.includes('new-hover') &&
-                        lineIndex >= lineRanges['new-hover'][0] &&
-                        lineIndex <= lineRanges['new-hover'][1])
+                        (states.includes('input-focus') &&
+                          lineIndex >= lineRanges['input-focus'][0] &&
+                          lineIndex <= lineRanges['input-focus'][1]) ||
+                        (states.includes('item-hover') &&
+                          lineIndex >= lineRanges['item-hover'][0] &&
+                          lineIndex <= lineRanges['item-hover'][1]) ||
+                        (states.includes('new-hover') &&
+                          lineIndex >= lineRanges['new-hover'][0] &&
+                          lineIndex <= lineRanges['new-hover'][1])
                         ? 'not-mono'
                         : ''
                     }

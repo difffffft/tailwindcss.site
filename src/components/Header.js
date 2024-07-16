@@ -118,27 +118,34 @@ export function NavPopover({ display = 'md:hidden', className, ...props }) {
 export function NavItems() {
   return (
     <>
+      {/* Docs */}
       <li>
         <Link href="/docs/installation" className="hover:text-sky-500 dark:hover:text-sky-400">
-          Docs
+          文档
         </Link>
       </li>
+
+      {/* Components */}
       <li>
         <a
           href="https://tailwindui.com/?ref=top"
           className="hover:text-sky-500 dark:hover:text-sky-400"
         >
-          Components
+          组件
         </a>
       </li>
+
+      {/* Blog */}
       <li>
         <Link href="/blog" className="hover:text-sky-500 dark:hover:text-sky-400">
-          Blog
+          博客
         </Link>
       </li>
+
+      {/* Showcase */}
       <li>
         <Link href="/showcase" className="hover:text-sky-500 dark:hover:text-sky-400">
-          Showcase
+          展示
         </Link>
       </li>
     </>

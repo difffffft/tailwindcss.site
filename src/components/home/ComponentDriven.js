@@ -206,7 +206,7 @@ function ComponentExample({ framework }) {
                       (token.types[token.types.length - 1] === 'tag' &&
                         /^([A-Z]|x-)/.test(token.content))) &&
                     tokens[tokenIndex - 1]?.types[tokens[tokenIndex - 1].types.length - 1] ===
-                      'punctuation' &&
+                    'punctuation' &&
                     (tokens[tokenIndex - 1]?.content === '<' ||
                       tokens[tokenIndex - 1].content === '</')
                   ) {
@@ -330,14 +330,13 @@ function AtApplySection() {
     <div className="mt-20 relative max-w-7xl mx-auto px-4 sm:mt-32 sm:px-6 md:px-8 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:grid-rows-1">
       <div className="lg:col-span-7 xl:col-span-6 lg:row-end-1">
         <h3 className="text-3xl text-slate-900 font-extrabold dark:text-slate-200">
-          Not into component frameworks?
+          不喜欢组件框架？
         </h3>
         <Paragraph>
-          Use Tailwind's <InlineCode>@apply</InlineCode> directive to extract repeated utility
-          patterns into custom CSS classes just by copying and pasting the list of class names.
+          使用 Tailwind 的 <InlineCode>@apply</InlineCode> 指令，通过复制和粘贴类名列表，将重复的实用程序模式提取为自定义 CSS 类。
         </Paragraph>
         <Link href="/docs/reusing-styles" color="sky" darkColor="gray">
-          Learn more<span className="sr-only">, reusing styles</span>
+          学习更多<span className="sr-only">, reusing styles</span>
         </Link>
       </div>
 
@@ -557,17 +556,15 @@ export function ComponentDriven() {
           light={require('@/img/icons/home/component-driven.png').default.src}
           dark={require('@/img/icons/home/dark/component-driven.png').default.src}
         />
-        <Caption className="text-sky-500">Component-driven</Caption>
+        <Caption className="text-sky-500">组件驱动</Caption>
         <BigText>
-          <Widont>Worried about duplication? Don’t be.</Widont>
+          <Widont>担心重复？不用担心。</Widont>
         </BigText>
         <Paragraph>
-          If you're repeating the same utilities over and over and over again, all you have to do is
-          extract them into a component or template partial and boom — you've got a single source of
-          truth so you can make changes in one place.
+          如果您一遍又一遍地重复使用相同的实用工具，您只需将它们提取到一个组件或模板部分中，一切就搞定了 — 您将拥有一个统一的真实数据源，因此可以在一个地方进行更改。
         </Paragraph>
         <Link href="/docs/reusing-styles" color="sky" darkColor="gray">
-          Learn more<span className="sr-only">, reusing styles</span>
+          学习更多<span className="sr-only">, reusing styles</span>
         </Link>
         <div className="mt-10">
           <Tabs

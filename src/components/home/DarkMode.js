@@ -112,18 +112,15 @@ export function DarkMode() {
           light={require('@/img/icons/home/dark-mode.png').default.src}
           dark={require('@/img/icons/home/dark/dark-mode.png').default.src}
         />
-        <Caption className="text-slate-500">Dark mode</Caption>
+        <Caption className="text-slate-500">暗黑模式</Caption>
         <BigText>
-          <Widont>Now with Dark Mode.</Widont>
+          <Widont>现在支持暗黑模式。</Widont>
         </BigText>
         <Paragraph>
-          Don’t want to be one of those websites that blinds people when they open it on their phone
-          at 2am? Enable dark mode in your configuration file then throw{' '}
-          <InlineCode>dark:</InlineCode> in front of any color utility to apply it when dark mode is
-          active. Works for background colors, text colors, border colors, and even gradients.
+          不想成为那种在人们半夜打开手机时刺眼的网站？在配置文件中启用暗黑模式，然后在任何颜色实用程序前加上 <InlineCode>dark:</InlineCode> 即可在暗黑模式下应用该颜色。适用于背景颜色、文本颜色、边框颜色，甚至渐变色。
         </Paragraph>
         <Link href="/docs/dark-mode" color="gray">
-          Learn more<span className="sr-only">, dark mode</span>
+          学习更多<span className="sr-only">, dark mode</span>
         </Link>
       </div>
       <GridLockup
@@ -142,8 +139,7 @@ export function DarkMode() {
                   .replace(/demo-dark:/g, 'transition-all duration-500 demo-dark:')
                   .replace(
                     'src="/full-stack-radio.png"',
-                    `src="${
-                      require('@/img/full-stack-radio.png').default.src
+                    `src="${require('@/img/full-stack-radio.png').default.src
                     }" loading="lazy" decoding="async" `
                   ),
                 // .replace(/<button type="button" class="/g, '<div class="cursor-pointer ')

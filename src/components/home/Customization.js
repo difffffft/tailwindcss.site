@@ -94,23 +94,20 @@ export function Customization() {
           light={require('@/img/icons/home/customization.png').default.src}
           dark={require('@/img/icons/home/dark/customization.png').default.src}
         />
-        <Caption className="text-pink-500 dark:text-pink-400">Customization</Caption>
+        <Caption className="text-pink-500 dark:text-pink-400">定制化</Caption>
         <BigText>
-          <Widont>Extend it, tweak it, change it.</Widont>
+          <Widont>扩展它，微调它，改变它。</Widont>
         </BigText>
         <Paragraph as="div">
           <p>
-            Tailwind includes an expertly crafted set of defaults out-of-the-box, but literally
-            everything can be customized — from the color palette to the spacing scale to the box
-            shadows to the mouse cursor.
+            Tailwind 在开箱即用时包含一套精心制作的默认设置，但实际上一切都可以定制 — 从色彩调色板到间距比例尺，再到盒子阴影和鼠标光标。
           </p>
           <p>
-            Use the tailwind.config.js file to craft your own design system, then let Tailwind
-            transform it into your own custom CSS framework.
+            使用 tailwind.config.js 文件打造您自己的设计系统，然后让 Tailwind 将其转换成您自己的定制 CSS 框架。
           </p>
         </Paragraph>
         <Link href="/docs/configuration" color="pink" darkColor="gray">
-          Learn more<span className="sr-only">, configuration</span>
+          学习更多<span className="sr-only">, configuration</span>
         </Link>
         <div className="mt-10">
           <Tabs

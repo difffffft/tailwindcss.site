@@ -1,4 +1,21 @@
 export function Tabs({ tabs, selected, onChange, className, iconClassName }) {
+
+  const getChineseNameByName = ({ name }) => {
+    switch (name) {
+      case "Sizing":
+        return "尺寸"
+      case "Colors":
+        return "颜色"
+      case "Typography":
+        return "排版"
+      case "Shadows":
+        return "阴影"
+      default:
+        break;
+    }
+    return ""
+  }
+
   return (
     <div className="flex overflow-auto -mx-4 sm:mx-0">
       <ul
@@ -10,24 +27,22 @@ export function Tabs({ tabs, selected, onChange, className, iconClassName }) {
             <button
               type="button"
               onClick={() => onChange(name)}
-              className={`group text-sm font-semibold w-full flex flex-col items-center ${
-                selected === name ? className : ''
-              }`}
+              className={`group text-sm font-semibold w-full flex flex-col items-center ${selected === name ? className : ''
+                }`}
             >
               <svg
                 width="48"
                 height="48"
                 fill="none"
                 aria-hidden="true"
-                className={`mb-6 ${
-                  selected === name
-                    ? iconClassName
-                    : 'text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500'
-                }`}
+                className={`mb-6 ${selected === name
+                  ? iconClassName
+                  : 'text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500'
+                  }`}
               >
                 {icon(selected === name)}
               </svg>
-              {name}
+              {getChineseNameByName({ name })}
             </button>
           </li>
         ))}

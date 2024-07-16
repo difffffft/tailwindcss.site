@@ -272,16 +272,14 @@ export function MobileFirst() {
           light={require('@/img/icons/home/mobile-first.png').default.src}
           dark={require('@/img/icons/home/dark/mobile-first.png').default.src}
         />
-        <Caption className="text-indigo-500 dark:text-indigo-400">Mobile-first</Caption>
-        <BigText>Responsive everything.</BigText>
+        <Caption className="text-indigo-500 dark:text-indigo-400">移动优先</Caption>
+        <BigText>响应式无处不在。</BigText>
         <Paragraph as="div">
           <p>
-            Wrestling with a bunch of complex media queries in your CSS sucks, so Tailwind lets you
-            build responsive designs right in your HTML instead.
+            在 CSS 中纠结于一堆复杂的媒体查询很痛苦，所以 Tailwind 允许您直接在 HTML 中构建响应式设计。
           </p>
           <p>
-            Throw a screen size in front of literally any utility class and watch it magically apply
-            at a specific breakpoint.
+            只需在任何实用类前面加上屏幕尺寸，它会在特定断点上神奇地应用
           </p>
         </Paragraph>
         <Link href="/docs/responsive-design" color="indigo" darkColor="gray">
